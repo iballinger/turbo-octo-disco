@@ -12,7 +12,7 @@ export function delAnime(animeId) {
 }
 
 export function searchAnime(search) {
-  return sendRequest(`${BASE_URL}/search`, 'POST', search);
+  return sendRequest(`${BASE_URL}/search`, 'POST', {search});
 }
 
 export function animeDetail(animeId) {

@@ -10,7 +10,6 @@ export default function SearchPage() {
         evt.preventDefault();
         console.log(`handling search for "${query}"`);
         const data = await animeAPI.searchAnime(query);
-        console.log(data);
         setResults(data);
     }
 

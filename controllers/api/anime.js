@@ -21,15 +21,11 @@ async function delAnime(req, res) {
 }
 
 async function searchAnime(req, res) {
-    console.log('hit the controller for the api');
-    console.log(`${API_URL}/anime?q=${req.body.query}&order_by=ranking`)
     const result = await fetch(
-        `${API_URL}/anime?q=${req.body.query}&order_by=ranking`
+        `${API_URL}/anime?q=${req.body.search}&order_by=ranking`
     ).then(res => {
-        console.log(res);
         return (res.json())
     });
-    console.log(result);
     res.json(result.data);
 }
 
