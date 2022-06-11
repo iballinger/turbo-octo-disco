@@ -16,7 +16,7 @@ export function searchAnime(search) {
 }
 
 export function animeDetail(animeId) {
-  return sendRequest(`${BASE_URL}/animeId/details`, 'POST', animeId);
+  return sendRequest(`${BASE_URL}/animeId/details`, 'POST', {animeId});
 }
 
 export function topAnime() {

@@ -30,12 +30,15 @@ async function searchAnime(req, res) {
 }
 
 async function animeDetail(req, res) {
-    console.log(req.body)
+    console.log(`api animeDetail hit`);
+    console.log(`req.body.params: ${req.body.params}`)
     const anime = await fetch(
         `${API_URL}/anime/${req.body.params}`
     ).then(res => {
-        return (res.json())
+        console.log(res.json());
+        return (res.json());
     });
+    console.log(anime.data);
     res.json(anime.data);
 }
 

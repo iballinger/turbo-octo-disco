@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function AnimeCard({ anime }) {
     return (
         <div className="card">
-            <img src={anime.images} alt="Main Picture" />
+            <img src={anime.images} alt="Main" />
             <div className="container">
                 <Link to={`/anime/${(anime.mal_id)}`}>
                     <h4>{anime.title}</h4>
