@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/anime/seasonal" element={<SeasonalAnimePage />} />
             <Route path="/anime/search" element={<SearchPage />} />
-            <Route path="/anime/:malId" element={<AnimePage />} />
+            <Route path="/anime/:mal_id" element={<AnimePage />} />
           </Routes>
         </>
         :

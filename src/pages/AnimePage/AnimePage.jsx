@@ -4,12 +4,12 @@ import * as animeAPI from "../../utilities/anime-api";
 
 export default function AnimePage() {
     const [anime, setAnime] = useState();
-    const { malId } = useParams();
+    const { mal_id } = useParams();
 
     useEffect(() => {
-        console.log(`malId is ${malId}`);
+        console.log(`mal_id is ${mal_id}`);
         async function loadDetails() {
-            let animeDetails = await animeAPI.animeDetail(malId);
+            let animeDetails = await animeAPI.animeDetail(mal_id);
             console.log(`animeDetails is ${animeDetails}`);
             setAnime(animeDetails);
         }
