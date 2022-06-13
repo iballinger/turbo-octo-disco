@@ -18,8 +18,6 @@ async function delAnime(req, res) {
 }
 async function topAnime(req, res) {
 }
-async function topAnime(req, res) {
-}
 
 async function searchAnime(req, res) {
     const result = await fetch(
