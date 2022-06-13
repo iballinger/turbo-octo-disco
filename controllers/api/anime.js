@@ -1,5 +1,5 @@
 const Anime = require('../../models/anime');
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');
 
 module.exports = {
     newAnime,
