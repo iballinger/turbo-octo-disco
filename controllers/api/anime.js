@@ -13,11 +13,12 @@ module.exports = {
 const API_URL = 'https://api.jikan.moe/v4';
 
 async function newAnime(req, res) {
-
 }
-
 async function delAnime(req, res) {
-
+}
+async function topAnime(req, res) {
+}
+async function topAnime(req, res) {
 }
 
 async function searchAnime(req, res) {
@@ -40,9 +41,6 @@ async function animeDetail(req, res) {
     });
     console.log(anime.data);
     res.json(anime.data);
-}
-
-async function topAnime(req, res) {
 }
 
 async function seasonalAnime(req, res) {
